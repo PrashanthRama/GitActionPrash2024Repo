@@ -1,10 +1,17 @@
 name: CDTest-Hello-world
 on: push
 jobs:
-  my-job:
+  job1:
     runs-on: ubuntu-latest
     steps:
       - name: step1
-        run: echo "CD Test Hello World!"
+        run: echo "Job1 CD Test Hello World!"
       - name: step2
-        run: echo "Goodbye.."
+        run: echo "Job1 Goodbye.."
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Job2 CD Test Hello World!"
+      - name: step2
+        run: echo "Job2 Goodbye.."
